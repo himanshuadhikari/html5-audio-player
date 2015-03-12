@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="player.js" defer></script>
+    <link href="player.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="author">
+            Create By : <a href="https://www.facebook.com/Mountainhuda" target="_blank">Himanshu Adhikari</a>
+        </div>
+        <canvas id="canvas">
+        </canvas>
+
+      
+            <div class="player-wrapper">
+                <div id="feeds">
+                    Now Playing :
+                </div>
+                <div id="player-left">
+                    <button onclick="play()">play</button>
+                    <button onclick="pause()">pause</button>
+                </div>
+                <div id="player-right">
+                    <span id="currentTime"></span>
+                    <input type="range" id="seek"><span id="totalTime"></span>
+                    <img id="volumeImg" src="volume-down.png">
+                    <input type="range" id="volume">
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+</body>
+
+</html>
